@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#800080"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="LISETTES COFFFE SHOP"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="#00ff00"
+        android:textSize="32dp"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:layout_weight="1"
+         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Enter Number of Coffee"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="italic"
+        android:textColor="#00ff00"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:layout_weight="1"
+        />
+    <EditText
+        android:id="@+id/nameUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TYPE YOUR NAME"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_margin="16sp"
+        android:padding="8dp"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="horizontal"
+    android:layout_weight="1"
+    android:gravity="center"
+    >
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="104dp"
+        android:layout_weight="1"
+        android:id="@+id/negative"
+        android:onClick="btnMinus"
+        android:text="-"
+        android:textSize="48dp"
+        android:backgroundTint="#00ff00"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="104dp"
+        android:layout_weight="1"
+        android:text="0"
+        android:textSize="48dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/coffee"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="104dp"
+        android:layout_weight="1"
+        android:id="@+id/positive"
+        android:onClick="btnPlus"
+        android:text="+"
+        android:textColor="@color/black"
+        android:textSize="48dp"
+        android:backgroundTint="#00ff00"
+        android:gravity="center"
+        />
+
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/white"
+        android:text="Your Order:"
+        android:textSize="24sp"
+        android:id="@+id/orderTxt"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:text="ORDER"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/orderButton"
+        android:onClick="btnOrder"
+        />
+
+</LinearLayout>
